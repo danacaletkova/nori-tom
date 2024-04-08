@@ -1,0 +1,34 @@
+body {
+  text-align: center;
+}
+.names {
+  font-family: "Dancing Script", cursive;
+  font-size: 150px;
+  margin-top: 200px;
+}
+
+.languages {
+  /* font-family: "Dancing Script", cursive; */
+  font-family: "Montserrat", sans-serif;
+
+  font-size: 25px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.date {
+  /* font-family: "Josefin Slab", serif; */
+  font-family: "Montserrat", sans-serif;
+  font-weight: 900;
+  font-size: 50px;
+  padding: 50px;
+}
+
+footer {
+  font-family: "Montserrat", sans-serif;
+  font-size: small;
+}
+
+footer a {
+  text-decoration: none;
+}
