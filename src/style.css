@@ -1,23 +1,27 @@
 body {
   text-align: center;
-}
-.names {
   font-family: "Dancing Script", cursive;
-  font-size: 150px;
-  margin-top: 200px;
 }
 
-.languages {
-  /* font-family: "Dancing Script", cursive; */
-  font-family: "Montserrat", sans-serif;
-
-  font-size: 25px;
+.names-languages {
+  margin-top: 200px;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
+  align-items: top;
+  flex-wrap: nowrap;
+  column-gap: 50px;
+}
+
+.name {
+  font-size: 150px;
+}
+
+.language {
+  font-family: "Montserrat", sans-serif;
+  font-size: 15px;
 }
 
 .date {
-  /* font-family: "Josefin Slab", serif; */
   font-family: "Montserrat", sans-serif;
   font-weight: 900;
   font-size: 50px;
