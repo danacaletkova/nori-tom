@@ -1,43 +1,47 @@
-body {
-  text-align: center;
-  font-family: "Dancing Script", cursive;
+:root {
+  --primary-font: "Dancing Script", cursive;
+  --secondary-font: "Montserrat", sans-serif;
 }
 
-main a {
-  color: black;
+.hero {
+  text-align: center;
+  height: 100vh;
+  padding: 0 30px;
+}
+
+.link {
   text-decoration: none;
+  color: black;
 }
 
 .names-languages {
-  margin-top: 200px;
+  padding-top: 150px;
   display: flex;
   justify-content: center;
-  align-items: top;
-  flex-wrap: nowrap;
-  column-gap: 50px;
-}
-
-.name {
+  /* align-items: center; */
   font-size: 150px;
 }
 
+.name {
+  font-family: var(--primary-font);
+  padding: 0 30px;
+}
+
 .language {
-  font-family: "Montserrat", sans-serif;
-  font-size: 15px;
+  font-family: var(--secondary-font);
+  font-size: 16px;
 }
 
 .date {
-  font-family: "Montserrat", sans-serif;
+  font-family: var(--secondary-font);
   font-weight: 900;
   font-size: 50px;
   padding: 50px;
 }
 
 footer {
-  font-family: "Montserrat", sans-serif;
-  font-size: small;
-}
-
-footer a {
-  text-decoration: none;
+  font-family: var(--secondary-font);
+  font-size: 12px;
+  position: fixed;
+  bottom: 10px;
 }
