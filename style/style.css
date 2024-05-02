@@ -1,47 +1,64 @@
 :root {
-  --primary-font: "Dancing Script", cursive;
-  --secondary-font: "Montserrat", sans-serif;
+  --font-primary: "Dancing Script", cursive;
+  --font-secondary: "Montserrat", sans-serif;
+  --color-primary: rgb(48, 75, 68);
 }
 
-.hero {
+.front {
+  background-image: url(/images/front.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
   text-align: center;
   height: 100vh;
-  padding: 0 30px;
+  display: flex;
+  align-items: center;
 }
 
-.link {
-  text-decoration: none;
-  color: black;
-}
-
-.names-languages {
-  padding-top: 150px;
+.front-text {
   display: flex;
   justify-content: center;
-  /* align-items: center; */
-  font-size: 150px;
 }
 
-.name {
-  font-family: var(--primary-font);
-  padding: 0 30px;
+.side {
+  transition: all 200ms ease-in-out;
+}
+
+.side:hover {
+  transform: scale(1.1);
+}
+
+.name,
+.and {
+  font-family: var(--font-primary);
+  color: var(--color-primary);
+  font-size: 96px;
+  line-height: 1;
+  padding: 0 20px;
 }
 
 .language {
-  font-family: var(--secondary-font);
-  font-size: 16px;
+  font-family: var(--font-secondary);
+  font-size: 13px;
 }
 
-.date {
-  font-family: var(--secondary-font);
-  font-weight: 900;
-  font-size: 50px;
-  padding: 50px;
+.language-link {
+  text-decoration: none;
+  color: var(--color-primary);
 }
 
 footer {
+  text-align: center;
   font-family: var(--secondary-font);
   font-size: 12px;
   position: fixed;
   bottom: 10px;
+}
+
+@media (max-width: 576px) {
+  .name,
+  .and {
+    font-size: 64px;
+    padding: 0 10px;
+  }
 }
