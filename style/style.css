@@ -1,7 +1,9 @@
 :root {
   --font-primary: "Dancing Script", cursive;
   --font-secondary: "Montserrat", sans-serif;
-  --color-primary: rgb(48, 75, 68);
+  --color-green: #33553c;
+  --color-gray: rgb(151, 158, 166);
+  --color-gold: rgb(170, 108, 21);
 }
 
 .front {
@@ -21,7 +23,7 @@
 }
 
 .side {
-  transition: all 200ms ease-in-out;
+  transition: all 200ms ease-out;
 }
 
 .side:hover {
@@ -31,7 +33,7 @@
 .name,
 .and {
   font-family: var(--font-primary);
-  color: var(--color-primary);
+  color: var(--color-green);
   font-size: 96px;
   line-height: 1;
   padding: 0 20px;
@@ -42,17 +44,69 @@
   font-size: 13px;
 }
 
-.language-link {
+.language-link,
+.link {
   text-decoration: none;
-  color: var(--color-primary);
+  color: var(--color-green);
+}
+
+.navigation {
+  z-index: 1;
+  display: flex;
+  justify-content: space-between;
+  padding: 5px;
+  position: fixed;
+  background-color: var(--color-green);
+  color: #fff;
+  box-shadow: rgba(0, 0, 0, 0.04) 0px 3px 5px;
+}
+
+.nav-link {
+  padding: 5px 15px;
+}
+
+.homepage-link {
+  font-family: var(--font-primary);
+  font-size: 20px;
+}
+
+.page-links {
+  display: flex;
+  align-items: center;
+  font-family: var(--font-secondary);
+  font-size: 13px;
+  text-transform: uppercase;
+}
+
+.decoration {
+  width: 100%;
+  max-width: 400px;
+}
+
+section {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 30px;
+  align-items: center;
+  justify-items: center;
+  padding: 80px;
+  color: black;
+}
+
+h1 {
+  font-family: var(--font-primary);
+  font-size: 64px;
+  color: var(--color-green);
+}
+
+p {
+  opacity: 0.7;
 }
 
 footer {
   text-align: center;
-  font-family: var(--secondary-font);
-  font-size: 12px;
-  position: fixed;
-  bottom: 10px;
+  font-family: var(--font-secondary);
+  font-size: 10px;
 }
 
 @media (max-width: 576px) {
@@ -60,5 +114,33 @@ footer {
   .and {
     font-size: 64px;
     padding: 0 10px;
+  }
+
+  .nav-link {
+    padding: 3px 8px;
+  }
+
+  .homepage-link {
+    font-size: 13px;
+  }
+
+  .page-links {
+    font-size: 10px;
+  }
+
+  section {
+    grid-template-columns: 1fr 2fr;
+    grid-gap: 10px;
+    align-items: center;
+    justify-items: center;
+    padding: 40px 20px;
+  }
+
+  section h1 {
+      font-size: 32px;
+  }
+
+  section p {
+    font-size: 14px;
   }
 }
