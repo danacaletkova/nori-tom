@@ -28,37 +28,61 @@
     <link rel="stylesheet" href="/style/style.css" />
   </head>
   <body>
-    <nav class="container-fluid navigation">
-      <div class="homepage-link">
-        <a href="/" class="nav-link">Nori & Tom</a>
-      </div>
-      <div class="page-links">
-        <div>
-          <a href="#" class="nav-link">place</a>
+    <header>
+      <nav class="container-fluid navigation">
+        <div class="homepage-link">
+          <a href="/" class="nav-link">Nori & Tom</a>
         </div>
-        <div>
-          <a href="#" class="nav-link">program</a>
+        <div class="page-links">
+          <div>
+            <a href="#date" class="nav-link">date</a>
+          </div>
+          <div>
+            <a href="#place" class="nav-link">place</a>
+          </div>
+          <div>
+            <a href="#program" class="nav-link">program</a>
+          </div>
+          <div>
+            <a href="#contact" class="nav-link">contact</a>
+          </div>
         </div>
-        <div>
-          <a href="#" class="nav-link">contact</a>
-        </div>
-      </div>
-    </nav>
+      </nav>
+    </header>
     <main>
-      <section class="grid">
+      <section id="date" class="grid grid-text-right">
         <img src="/images/gold3.jpg" alt="" class="decoration" />
         <div class="text-content">
-          <h1>Vítejte</h1>
+          <h1>Datum a čas</h1>
+          <p>Here is some information about the date and time.</p>
+        </div>
+      </section>
+      <section id="place" class="grid grid-text-left">
+        <div class="text-content">
+          <h1>Místo konání</h1>
           <p>
-            Here you could greet the guests and thank them or something like
-            that.
+            Here is some information about the place, the address, a map, etc.
+          </p>
+        </div>
+        <img src="images/silver2.jpg" alt="" class="decoration" />
+      </section>
+      <section id="program" class="grid grid-text-right">
+        <img src="/images/gold1.jpg" alt="" class="decoration" />
+        <div class="text-content">
+          <h1>Harmonogram</h1>
+          <p>
+            Here is some information about the schedule, simply when to expect
+            what.
           </p>
         </div>
       </section>
-      <section class="grid">
+      <section id="contact" class="grid grid-text-left">
         <div class="text-content">
-          <h1>Datum</h1>
-          <p>date information</p>
+          <h1>Ozvěte se nám</h1>
+          <p>
+            Here you can tell people that they can contact you on (some email
+            address... or phones or whatever) in case they have any questions.
+          </p>
         </div>
         <img src="images/silver2.jpg" alt="" class="decoration" />
       </section>
