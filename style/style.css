@@ -154,6 +154,12 @@ p {
   font-size: 12px;
 }
 
+.embed {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  padding: 30px;
+}
+
 footer {
   max-width: 100vw;
   aspect-ratio: 2/1;
