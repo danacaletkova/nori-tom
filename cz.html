@@ -50,15 +50,35 @@
       </nav>
       <div class="greeting">
         <h1>Vítejte!</h1>
-        <p>Here you can briefly welcome the guests</p>
+        <p>Níže najdete užitečné informace k naší svatbě.</p>
       </div>
     </header>
     <main>
       <section id="date" class="grid grid-text-right">
-        <img src="/images/gold3.jpg" alt="" class="decoration" />
+        <div class="d-flex justify-content-center text-center">
+          <div>
+            <div class="countdown-numbers" id="days"></div>
+            <div class="countdown-words">dny</div>
+          </div>
+          <div>
+            <div class="countdown-numbers" id="hours"></div>
+            <div class="countdown-words">hodiny</div>
+          </div>
+          <div>
+            <div class="countdown-numbers" id="minutes"></div>
+            <div class="countdown-words">minuty</div>
+          </div>
+          <div>
+            <div class="countdown-numbers" id="seconds"></div>
+            <div class="countdown-words">vteřiny</div>
+          </div>
+        </div>
         <div class="text-content">
           <h2>Datum a čas</h2>
-          <p>Here is a space for some information about the date and time.</p>
+          <p>
+            Svatební den <strong>7. září 2024</strong> zahájíme v
+            <strong>17:00</strong> oficiálním obřadem.
+          </p>
         </div>
       </section>
       <section id="place" class="grid grid-text-left">
@@ -102,5 +122,6 @@
         >
       </div>
     </footer>
+    <script src="/script.js"></script>
   </body>
 </html>
