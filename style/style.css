@@ -138,7 +138,7 @@ h2 {
 }
 
 p {
-  opacity: 0.7;
+  opacity: 0.8;
 }
 
 .countdown-numbers {
@@ -152,12 +152,23 @@ p {
 .countdown-words {
   opacity: 0.7;
   font-size: 12px;
+  text-transform: uppercase;
 }
 
 .embed {
   width: 100%;
   aspect-ratio: 1 / 1;
   padding: 30px;
+}
+
+.contact-link {
+  text-decoration: none;
+  font-weight: 700;
+  color: #000;
+}
+
+.contact-link:hover {
+  color: var(--color-green);
 }
 
 footer {
