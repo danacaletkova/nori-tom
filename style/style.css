@@ -2,8 +2,6 @@
   --font-primary: "Licorice", cursive;
   --font-secondary: "Montserrat", sans-serif;
   --color-green: #33553c;
-  --color-gray: rgb(151, 158, 166);
-  --color-gold: #yellow;
 }
 
 .front {
@@ -36,7 +34,7 @@
 
 .glow:hover {
   font-weight: bolder;
-  text-shadow: 1px 1px 5px #e3b34e;
+  text-shadow: 1px 1px 5px #e3b34e, -1px -1px 5px #e3b34e;
 }
 
 .name,
@@ -117,11 +115,27 @@ header {
   max-width: 400px;
 }
 
+.image {
+  width: 100%;
+  object-fit: cover;
+}
+
+main {
+  max-width: 1200px;
+  margin: 0;
+}
+
 section {
+  margin: 0 40px;
+  padding: 120px 0;
   align-items: center;
   justify-items: center;
-  padding: 80px;
   color: black;
+  border-bottom: 1px solid #ddd;
+}
+
+section:last-of-type {
+  border: none;
 }
 
 .grid {
@@ -141,12 +155,22 @@ p {
   opacity: 0.8;
 }
 
+.countdown {
+  aspect-ratio: 4 / 3;
+  background-image: url(/images/countdown-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  opacity: 0.9;
+}
+
 .countdown-numbers {
+  font-weight: 700;
   font-size: 40px;
   line-height: 1;
-  font-weight: 900;
-  color: var(--color-green);
   padding: 0 20px;
+  color: var(--color-green);
+  text-shadow: 1px 1px 1px var(--color-gold);
 }
 
 .countdown-words {
@@ -157,8 +181,7 @@ p {
 
 .embed {
   width: 100%;
-  aspect-ratio: 1 / 1;
-  padding: 30px;
+  aspect-ratio: 3 / 2;
 }
 
 .contact-link {
@@ -203,7 +226,7 @@ footer {
   color: white;
 }
 
-@media (max-width: 576px) {
+@media (max-width: 768px) {
   .name,
   .and {
     font-size: 60px;
@@ -229,13 +252,15 @@ footer {
     padding: 40px 20px;
   }
 
-  .grid-text-left {
-    grid-template-columns: 2fr 1fr;
-    grid-gap: 10px;
+  .grid-text-left,
+  .grid-text-right {
+    display: flex;
+    flex-direction: column;
   }
 
   .grid-text-right {
-    grid-template-columns: 1fr 2fr;
+    display: flex;
+    flex-direction: column-reverse;
   }
 
   .greeting {
@@ -243,7 +268,7 @@ footer {
   }
 
   .greeting h1,
-   h2 {
+  h2 {
     font-size: 32px;
   }
 
