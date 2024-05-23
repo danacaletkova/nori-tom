@@ -98,6 +98,18 @@ header {
   padding: 5px 20px;
 }
 
+.green-link {
+  text-decoration: none;
+  font-weight: 700;
+  color: var(--color-green);
+  transition: all 100ms ease-out;
+}
+
+.green-link:hover {
+  color: #000;
+  opacity: 0.8;
+}
+
 .greeting {
   align-self: flex-end;
   text-align: center;
@@ -110,19 +122,9 @@ header {
   font-family: var(--font-primary);
 }
 
-.decoration {
-  width: 100%;
-  max-width: 400px;
-}
-
-.image {
-  width: 100%;
-  object-fit: cover;
-}
-
 main {
   max-width: 1200px;
-  margin: 0;
+  margin: 0 auto;
 }
 
 section {
@@ -155,20 +157,33 @@ p {
   opacity: 0.8;
 }
 
-.countdown {
-  aspect-ratio: 4 / 3;
-  background-image: url(/images/countdown-bg.jpg);
+strong {
+  opacity: 0.8;
+}
+
+.countdown,
+.contact {
+  width: 100%;
+  aspect-ratio: 3 / 2;
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
   opacity: 0.9;
 }
 
+.countdown {
+  background-image: url(/images/countdown-bg.jpg);
+  flex-basis: 50%;
+}
+.contact {
+  background-image: url(/images/square-bg.jpg);
+}
+
 .countdown-numbers {
   font-weight: 700;
   font-size: 40px;
   line-height: 1;
-  padding: 0 20px;
+  padding: 10px 20px 0 20px;
   color: var(--color-green);
   text-shadow: 1px 1px 1px var(--color-gold);
 }
@@ -179,19 +194,17 @@ p {
   text-transform: uppercase;
 }
 
+iframe {
+  aspect-ratio: 3 / 2;
+  width: 100%;
+}
+
 .embed {
   width: 100%;
-  aspect-ratio: 3 / 2;
 }
 
-.contact-link {
-  text-decoration: none;
-  font-weight: 700;
-  color: #000;
-}
-
-.contact-link:hover {
-  color: var(--color-green);
+.icon {
+  padding: 35px 15px 0 15px;
 }
 
 footer {
@@ -280,5 +293,34 @@ footer {
   .footer-text {
     font-size: 10px;
     padding: 6px;
+  }
+
+  .countdown-numbers {
+    font-size: 25px;
+    padding: 10px 15px 0 15px;
+  }
+
+  .countdown-words {
+    font-size: 10px;
+  }
+
+  .icon {
+    padding: 25px 10px 0 10px;
+  }
+
+  .countdown,
+  .embed,
+  .image,
+  .contact {
+    width: 50%;
+  }
+}
+
+@media (max-width: 576px) {
+  .countdown,
+  .embed,
+  .image,
+  .contact {
+    width: 100%;
   }
 }
