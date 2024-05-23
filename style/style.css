@@ -28,11 +28,11 @@
   transform: scale(1.1);
 }
 
-.glow {
+.glow, .active {
   transition: all 100ms ease-out;
 }
 
-.glow:hover {
+.glow:hover, .active {
   font-weight: bolder;
   text-shadow: 1px 1px 5px #e3b34e, -1px -1px 5px #e3b34e;
 }
