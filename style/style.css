@@ -28,11 +28,13 @@
   transform: scale(1.1);
 }
 
-.glow, .active {
+.glow,
+.active {
   transition: all 100ms ease-out;
 }
 
-.glow:hover, .active {
+.glow:hover,
+.active {
   font-weight: bolder;
   text-shadow: 1px 1px 5px #e3b34e, -1px -1px 5px #e3b34e;
 }
@@ -41,9 +43,9 @@
 .and {
   font-family: var(--font-primary);
   color: var(--color-green);
-  font-size: 120px;
+  font-size: 15vmin;
   line-height: 0.7;
-  padding: 0 16px;
+  padding: 0 3vmin;
 }
 
 .language {
@@ -69,6 +71,7 @@ header {
 .navigation {
   z-index: 1;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   padding: 5px;
   position: fixed;
@@ -240,12 +243,6 @@ footer {
 }
 
 @media (max-width: 768px) {
-  .name,
-  .and {
-    font-size: 60px;
-    padding: 0 8px;
-  }
-
   .nav-links {
     font-size: 10px;
   }
