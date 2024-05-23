@@ -136,7 +136,7 @@ header {
   font-size: 24px;
   text-decoration: none;
   color: #fff;
-  padding-left: 10px;
+  padding: 0 10px;
 }
 
 .nav-link {
@@ -291,7 +291,6 @@ footer {
 
   .homepage-link {
     font-size: 13px;
-    padding-left: 8px;
   }
 
   .nav-link {
@@ -361,5 +360,9 @@ footer {
   .image,
   .contact {
     width: 100%;
+  }
+
+  .navigation {
+    justify-content: center;
   }
 }
