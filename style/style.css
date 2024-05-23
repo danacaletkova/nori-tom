@@ -4,6 +4,48 @@
   --color-green: #33553c;
 }
 
+.pop-up {
+  position: absolute;
+  padding: 10px;
+  margin: 10px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  backdrop-filter: blur(7px);
+  text-align: center;
+  left: 15%;
+  right: 15%;
+  top: 15%;
+  bottom: 15%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pop-up div {
+  text-align: center;
+  padding: 20px 40px;
+}
+
+.pop-up .line {
+  border: 1px solid #ddd;
+  padding: 0;
+  width: 70%;
+  margin: 0 auto;
+}
+
+.pop-up i {
+  color: var(--color-green);
+  padding: 40px;
+}
+
+.pop-up i:hover {
+  cursor: pointer;
+}
+
+.hidden {
+  display: none;
+}
+
 .front {
   background-image: url(/images/front.jpg);
   background-size: contain;
