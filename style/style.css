@@ -198,6 +198,12 @@ h2 {
   color: var(--color-green);
 }
 
+h3 {
+  font-family: var(--font-primary);
+  font-size: 32px;
+}
+
+h3,
 p {
   opacity: 0.8;
 }
@@ -321,6 +327,10 @@ footer {
   .greeting h1,
   h2 {
     font-size: 32px;
+  }
+
+  h3 {
+    font-size: 26px;
   }
 
   main p {
