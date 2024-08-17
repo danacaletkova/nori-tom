@@ -12,10 +12,7 @@
   border-radius: 10px;
   backdrop-filter: blur(7px);
   text-align: center;
-  left: 15%;
-  right: 15%;
-  top: 15%;
-  bottom: 15%;
+  inset: 15%;
   display: flex;
   justify-content: center;
   align-items: center;
