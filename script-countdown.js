@@ -1,4 +1,5 @@
 let wedding = new Date("Sep 7, 2024, 17:00:00 UTC+2").getTime();
+let countdownElement = document.querySelector("#countdown");
 
 let x = setInterval(function () {
   let now = new Date().getTime();
@@ -36,8 +37,11 @@ let x = setInterval(function () {
   let secondsElement = document.querySelector("#seconds");
   secondsElement.innerHTML = seconds;
 
-  if (distance < 0) {
+  if (distance <= 0) {
     clearInterval(x);
-    countdownElement.innerHTML = "";
+        daysElement.innerHTML = "00";
+        hoursElement.innerHTML = "00";
+        minutesElement.innerHTML = "00";
+        secondsElement.innerHTML = "00";
   }
 }, 1000);
