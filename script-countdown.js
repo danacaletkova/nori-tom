@@ -39,9 +39,10 @@ let x = setInterval(function () {
 
   if (distance <= 0) {
     clearInterval(x);
-        daysElement.innerHTML = "00";
-        hoursElement.innerHTML = "00";
-        minutesElement.innerHTML = "00";
-        secondsElement.innerHTML = "00";
+    countdownElement.innerHTML = "Egybekeltünk!<br/>Jsme svoji!";
+    // daysElement.innerHTML = "00";
+    // hoursElement.innerHTML = "00";
+    // minutesElement.innerHTML = "00";
+    // secondsElement.innerHTML = "00";
   }
 }, 1000);
